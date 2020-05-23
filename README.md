@@ -84,5 +84,8 @@ methods: {
 }
 ```
 
+* 全域 scss
+目前此核心專案，已經裝了 sass 的預處理器，並且在 assets 下加了 reset、global、variables 的 scss 檔案，其中 variables 檔案主要加入一些 breakpoint 和 color 設定，往後建立新專案可以根據專案需求做更改，NUXT 部分裝了 style-resources 將 variables 的 scss 檔案引入全域。
+倘若日後專案不想使用 scss 或是因為安裝的框架已經包含預處理器，可以輸入 `npm uninstall --save-dev node-sass sass-loader` 將 scss 預處理器刪除。
 ## 補充
 若後續此核心專案有再更新，例如找到好用、通用的套件等，都會做更新，並同步更新 README 做解釋。
