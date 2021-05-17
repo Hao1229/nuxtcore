@@ -31,7 +31,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 這邊將介紹一下此專案目前的設定。
 
-* node 版本：`v10.16.3` 或 以上。
+* node 版本：`v12.13.0` 或 以上。
 
 * 這是一個 SSR 的專案，並非 SPA，若需要轉換為 SPA，可到 `nuxt.config.js` 裡將 mode 改為 `mode: 'spa'`，再用 `npm run dev --spa` 即可，剩下 build 與 deploy 方法可參考此篇[文章](https://www.hellosanta.com.tw/blog/web-page-is-built-by-using-nuxt-single-page-application-is-easy)。
 
@@ -51,10 +51,10 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
   ```js
   module.exports = {
     vuetify: {
-        treeShake: true,
-        defaultAssets: false,
-        customVariables: ['~/assets/scss/_variables.scss'], // 在這裡可以引用我們自行定義的 scss 檔，專門用來覆蓋 vuetify 一些預設的變數。
-        optionsPath: './vuetify.option.js' // 我們可以在根目錄創建 vuetify.option.js 這隻檔案，並在裡面設定 icons 和 theme 等。
+      treeShake: true,
+      defaultAssets: false,
+      customVariables: ['~/assets/scss/_variables.scss'], // 在這裡可以引用我們自行定義的 scss 檔，專門用來覆蓋 vuetify 一些預設的變數。
+      optionsPath: './vuetify.option.js' // 我們可以在根目錄創建 vuetify.option.js 這隻檔案，並在裡面設定 icons 和 theme 等。
     }
   }
   ```
